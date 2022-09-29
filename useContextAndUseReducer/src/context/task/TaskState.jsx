@@ -6,6 +6,7 @@ import TaskContext from './TaskContext';
 function TaskState(props) {
     const initialState = [{ id: 1, text: "firt task" }];
     const [state, dispatch] = useReducer(TaskReducer, initialState)
+    console.log(useReducer)
     const handleAddTask = (t) => {
 
         dispatch({
